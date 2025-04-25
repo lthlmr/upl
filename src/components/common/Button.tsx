@@ -27,12 +27,12 @@ const Button: React.FC<ButtonProps> = ({
   const baseStyles = 'relative rounded-lg font-medium transition-all duration-200 focus:outline-none flex items-center justify-center overflow-hidden';
   
   const variantStyles = {
-    primary: 'bg-purple-700 hover:bg-purple-600 text-white shadow-lg hover:shadow-xl shadow-purple-900/30 border border-purple-500/20 hover:after:opacity-20 after:absolute after:inset-0 after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:opacity-0 after:transition-opacity',
-    secondary: 'bg-violet-900 hover:bg-violet-800 text-white shadow-lg hover:shadow-xl shadow-violet-900/30 border border-violet-600/20',
+    primary: 'bg-gradient-to-r from-purple-700 to-purple-500 hover:from-purple-600 hover:to-purple-400 text-white shadow-lg hover:shadow-xl shadow-purple-900/30 border border-purple-400/30 hover:border-purple-300/50 transform hover:scale-105 transition-all duration-300',
+    secondary: 'bg-purple-900/60 hover:bg-purple-800/80 text-white shadow-lg hover:shadow-xl shadow-purple-900/30 border border-purple-600/20 backdrop-blur-sm',
     success: 'bg-emerald-700 hover:bg-emerald-600 text-white shadow-lg hover:shadow-xl shadow-emerald-900/30 border border-emerald-500/20',
     danger: 'bg-red-700 hover:bg-red-600 text-white shadow-lg hover:shadow-xl shadow-red-900/30 border border-red-500/20',
-    outline: 'bg-transparent hover:bg-purple-900/20 text-purple-400 hover:text-purple-300 border border-purple-700/50 hover:border-purple-600',
-    ghost: 'bg-transparent text-gray-400 hover:text-purple-300 hover:bg-purple-900/20',
+    outline: 'bg-transparent hover:bg-purple-900/20 text-purple-400 hover:text-purple-300 border border-purple-700/50 hover:border-purple-600 backdrop-blur-sm transform hover:scale-105 transition-all duration-300',
+    ghost: 'bg-transparent text-gray-400 hover:text-purple-300 hover:bg-purple-900/20 backdrop-blur-sm',
   };
   
   const sizeStyles = {
